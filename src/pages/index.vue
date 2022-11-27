@@ -4,6 +4,7 @@ import { useBotStore } from '~/stores/bot-store'
 
 const router = useRouter()
 const botStore = useBotStore()
+const webTitle = useTitle('WAZONE')
 
 const { pickedData: bot, refetch } = useQuery({
   queryFn: () => botStore.fetchBot(),
@@ -18,8 +19,10 @@ const { pickedData: bot, refetch } = useQuery({
     const data = unref(result).data
     botStore.bot = data
     if (data?.qrCode || !data)
-
       await botStore.logoutBot()
+
+    if (data)
+      webTitle.value = `${data.name} | WAZONE`
   },
   onError: _ => router.push('/onboarding'),
 })
