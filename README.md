@@ -54,11 +54,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![WAZONE Screen Shot][send-and-receive-message]](https://example.com)
+[![WAZONE Screen Shot][send-and-receive-message]](https://github.com/kim-dev-git/WAZone-Web)
 
 ### Goal
 
-Build Web App to consume/visualize [this API/Service](https://github.com/kim-dev-git/WAZone-Web):
+Build Web App to consume/visualize [this API/Service](https://github.com/kim-dev-git/WAZone-Server):
 * Use all the API Endpoint
 * Show received WhatsApp message
 * Send received WhatsApp message
